@@ -1,14 +1,13 @@
-import React from 'react';
+import cls from "./App.module.scss"
 
 export default function App() {
   return (
     <div>
-      <h1>Vite + TypeScript</h1>
-      <div className="card">
-        <button id="counter" type="button"></button>
-      </div>
+      <h1 className={cls.tittle}>Vite + TypeScript</h1>
+      
       <p className="read-the-docs">
-        Click on the Vite and TypeScript logos to learn more
+        ТЕСТОВАЯ НАДПИСЬ
+        
       </p>
     </div>
   );

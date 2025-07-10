@@ -14,4 +14,9 @@ export default defineConfig({
       exclude: ['node_modules', 'dist'], // Исключения
     }),
   ],
+   css: {
+    modules: {
+      localsConvention: 'camelCase' // Опционально: преобразование имён классов
+    }
+   }
 });
