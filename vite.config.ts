@@ -17,7 +17,8 @@ export default defineConfig({
     Pages({
       dirs: 'src/pages', // Директория с вашими страницами
       exclude: ['**/components/**'], // Исключаем компоненты
-      react: true, // Активируем React-режим
+      extensions: ['jsx', 'tsx'], // Указываем расширения React-компонентов
+      importMode: 'async' // или 'sync'
     }),
   ],
   css: {
