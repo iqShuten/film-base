@@ -1,4 +1,4 @@
-import App from './app/App';
+import App from './pages/App';
 import { createRoot } from 'react-dom/client';
 import './style.css';
 import React from 'react';
