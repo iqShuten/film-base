@@ -19,5 +19,14 @@ module.exports = {
   rules: {
     'prettier/prettier': 'error', // Выводит ошибки при несоответствии формату Prettier
     'react/react-in-jsx-scope': 'off', // Для React 17+
+    'operator-linebreak': [
+      'error',
+      'after',
+      {
+        overrides: {
+          '|': 'before',
+        },
+      },
+    ],
   },
 };

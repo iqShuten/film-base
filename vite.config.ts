@@ -15,10 +15,10 @@ export default defineConfig({
       exclude: ['node_modules', 'dist'], // Исключения
     }),
     Pages({
-      dirs: 'src/pages', // Директория с вашими страницами
+      dirs: [{ dir: 'src/pages', baseRoute: '' }], // Директория с вашими страницами
       exclude: ['**/components/**'], // Исключаем компоненты
       extensions: ['jsx', 'tsx'], // Указываем расширения React-компонентов
-      importMode: 'async' // или 'sync'
+      importMode: 'async', // или 'sync'
     }),
   ],
   css: {
