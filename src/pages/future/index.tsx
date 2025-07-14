@@ -1,13 +1,13 @@
 import type { FC } from 'react';
 import { Link } from 'react-router-dom';
 
-const all: FC = () => {
+const index: FC = () => {
   return (
     <>
       <Link to="/">Home</Link>
-      <p>Куда-то вы поперлись не туда</p>
+      <p>Неизведанное будущее</p>
     </>
   );
 };
 
-export default all;
+export default index;

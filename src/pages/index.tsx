@@ -8,7 +8,7 @@ const index: FC = () => {
       <p>index.vue</p>
       <Link to="/films">Films |</Link>
       <Link to="/about"> about(заглушка) |</Link>
-      <Link to="/components"> components(заглушка) |</Link>
+      <Link to="/future"> Будущее(заглушка) |</Link>
     </div>
   );
 };
