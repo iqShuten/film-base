@@ -1,16 +1,8 @@
-import { Link } from 'react-router-dom';
-import cls from './index.module.scss';
 import type { FC } from 'react';
+import { Navbar } from '../widgets/navbar';
 
 const index: FC = () => {
-  return (
-    <div className={cls.tittle}>
-      <p>index.vue</p>
-      <Link to="/films">Films |</Link>
-      <Link to="/about"> about(заглушка) |</Link>
-      <Link to="/future"> Будущее(заглушка) |</Link>
-    </div>
-  );
+  return <Navbar />;
 };
 export default index;
 

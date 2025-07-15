@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client';
-import './style.css';
+import './style.scss';
 import { StrictMode, Suspense } from 'react';
 import { BrowserRouter, useRoutes } from 'react-router-dom';
 import routes from 'virtual:generated-pages-react';
