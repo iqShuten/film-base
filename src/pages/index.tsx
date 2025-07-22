@@ -1,8 +1,19 @@
 import type { FC } from 'react';
 import { Navbar } from '../widgets/navbar';
+import { FilmCard } from '../widgets/FilmCard';
+import { Checkbox } from '../shared/ui/Checkbox/Checkbox';
 
 const index: FC = () => {
-  return <Navbar />;
+  const testFilms = {
+    name: "Avatar",
+    watch: true
+  }
+  return <>
+  <Navbar />
+  <FilmCard name={testFilms.name} watch = {testFilms.watch}/>
+  <Checkbox />
+  
+  </>
 };
 export default index;
 

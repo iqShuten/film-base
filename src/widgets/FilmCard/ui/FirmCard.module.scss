@@ -1,0 +1,16 @@
+.FilmCard {
+    width: 90vw;
+  display: flex;
+  margin: 20px auto;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  border: 1px solid red;
+  border-radius: 9999px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  
+  font-size: larger;
+  background-color: rgb(114, 116, 20);
+  color: red
+}
