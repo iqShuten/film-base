@@ -1,17 +1,22 @@
 import type { FC } from 'react';
 import { Navbar } from '../widgets/navbar';
 import { FilmCard } from '../widgets/FilmCard';
-import { Checkbox } from '../shared/ui/Checkbox/Checkbox';
 
 const index: FC = () => {
-  const testFilms = {
-    name: "Avatar",
-    watch: true
-  }
+  const testFilms = [
+    {name: "Avatar",
+    watch: true},
+    {name: "Doomsday",
+    watch: false},
+  ]
+    
   return <>
   <Navbar />
-  <FilmCard name={testFilms.name} watch = {testFilms.watch}/>
-  <Checkbox />
+  <ul>
+    {testFilms.map((item)=>(<FilmCard name={item.name} watch={item.watch}/>))}
+  </ul>
+
+
   
   </>
 };

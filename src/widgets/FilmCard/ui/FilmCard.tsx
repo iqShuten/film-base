@@ -1,3 +1,4 @@
+import CustomCheckbox from "../../../shared/ui/CustomCheckbox/CustomCheckbox";
 import type { FilmCardShema } from "../types/FilmCardShema";
 import cls from "./FirmCard.module.scss";
 
@@ -8,11 +9,7 @@ export const FilmCard = (props: FilmCardShema ) => {
   return (
     <div className={cls.FilmCard}>
       <p>{name}</p>
-      <input 
-        type="checkbox" 
-        checked={watch}
-        // onChange={handleChange}
-      />
+      <CustomCheckbox checked={watch}/>
     </div>
   );
 };
