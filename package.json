@@ -32,6 +32,7 @@
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.3",
     "react-spinners": "^0.17.0",
-    "vite-plugin-pages": "^0.33.1"
+    "vite-plugin-pages": "^0.33.1",
+    "zustand": "^5.0.6"
   }
 }
