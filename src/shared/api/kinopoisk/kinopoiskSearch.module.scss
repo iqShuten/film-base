@@ -1,0 +1,63 @@
+.searchModule {
+  position: relative;
+  width: 100%;
+  max-width: 28rem; /* 448px, так как 1rem = 16px */
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.5rem; /* 8px */
+  border: 1px solid;
+  border-radius: 0.25rem; /* 4px */
+}
+
+.searhInput:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.dropdownList {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  margin-top: 0.25rem; /* 4px */
+  background-color: #fff;
+  border: 1px solid;
+  border-radius: 0.25rem; /* 4px */
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.isLoading {
+  padding: 0.5rem; /* 8px */
+  text-align: center;
+}
+
+.error {
+  padding: 0.5rem; /* 8px */
+  text-align: center;
+}
+
+.filmList {
+  padding: 0.5rem; /* 8px */
+  cursor: pointer;
+  border-bottom: 1px solid;
+}
+
+.filmList:hover {
+  background-color: #f3f4f6; /* gray-100 в Tailwind */
+}
+
+.filmList:last-child {
+  border-bottom: none;
+}
+
+.filmName {
+  font-weight: 600;
+  color: #000000;
+}
+
+.yearRating {
+  font-size: 0.875rem;  /* 14px */
+  line-height: 1.25rem; /* 20px */
+  color: #6b7280;       /* значение gray-500 в Tailwind */
+}

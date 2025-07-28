@@ -3,12 +3,12 @@ import { initializeApp } from "firebase/app";
 import { get, getDatabase, ref } from "firebase/database";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDQqFSo3-4Ogbo5cOJYzeXgDlNY4f7QKKk",
-  authDomain: "film-base-77890.firebaseapp.com",
-  databaseURL: "https://film-base-77890-default-rtdb.firebaseio.com",
-  projectId: "film-base-77890",
-  storageBucket: "film-base-77890.firebasestorage.app",
-  messagingSenderId: "354741670102",
+  apiKey: import.meta.env.API_KEY,
+  authDomain: import.meta.env.AUTH_DOMAIN,
+  databaseURL: import.meta.env.ITE_DATABASE_URL,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
 };
 
 // Инициализация Firebase
@@ -32,5 +32,3 @@ export async function fetchAllDataFirebase() {
   }
 }
 
-// fetchAllData().then(data => filmBase = data);
-// export { filmBase };
